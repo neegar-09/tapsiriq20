@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         // 9.arrayin elementlerinin cemini hasilini tapin
+
+//        let array = [2 , 4 , 6 , 3]
+
+//        cem =0;
+//        for (i=0 ; i<array.length ; i++){
+//         cem+= array[i];
+//        }
+//        console.log(cem);
+//    // hasil 
+//    hasil =1;
+//        for (i=0 ; i<array.length ; i++){
+//        hasil*= array[i];
+//        }
+//        console.log(hasil);
+
+
+//11 array elementlerinde eded olmayanlari silin
+
+// let array = [12 , "salam", " " , 43, a];
+// if(isNaN(array[i])){
+//     array[i].splice(2 , 2)
+// }
+// console.log( );
+    
+
+
+// //12 sozu tersine ceviren 
+// let text = "nigar";
+// let netice = ""
+
+// for (let i=text.length -1 ; i>=0 ; i--){
+//     netice+=text[i]
+
+// }
+// console.log(netice);
+
+
+
+// 13 cumleni tersine ceviren
+
+let text = "salam nigar"
+var array=text.split(' ');
+var array2 = " ";
+
+for (let i=text.length -1 ; i>=0 ; i--){
+    array2+=array[i] + " "
+
+}
+console.log(array2);
+
+  //14 Daxil edilmis ededi sozle yazin 
+  let teklik = ["sifir",  "bir", "iki", "uc", "dord" , "bes" , "alti" , "yeddi", "sekkiz", "doqquz" ]
+  let onluq = ["on", "iyirmi", "otuz", "qirx", "elli", "altmis", "yetmis", "seksen", "doxsan" , 'yuz']
+
+let eded =+prompt()
+let on = "";
+let tek = ""
+for (let i = 0; i<=10 ; i++){
+
+    if (Math.floor(eded/10)==i){
+        on=onluq[i-1];
+    }
+}
+for (let i = 0; i<=10 ; i++){
+
+if (eded%10==0 && eded>=10){
+    tek=""
+}
+else if(Math.floor(eded%10)==i){
+    tek= teklik[i]
+}
+}
+console.log(on+" " + tek);
+
+// 16 verilmis ededin tam eded olub olmamasi
+// let a =+prompt("eded daxil edin")
+// if ( Math.round(a) == a){
+//     console.log("tam ededdir");
+// }
+// else{
+//     console.log("tam deyil");
+// }
+
+
+//17 verilmis cumlede sozlerin sayini tapin
+
+// let cumle = "salam necesen neynirsen"
+// let soz = cumle.split(" ");
+// let say = 0;
+//  for (let i = 0; i<soz.length ; i++){
+//   say++;
+//  }
+       
+//  console.log(say);
+
+// 
+
+
+    </script>
+</body>
+</html>
